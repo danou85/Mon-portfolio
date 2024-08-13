@@ -1,0 +1,319 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3 {
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+h3:hover {
+    color: #007BFF; /* Color on hover */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 5px 20px; /* Reduced padding for a smaller header */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 60px; /* Adjusted height */
+}
+
+header .logo img {
+    width: 50px; /* Reduced logo size */
+    height: auto;
+}
+
+nav {
+    padding-left: 20px; /* Added padding-left to shift menu items slightly to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 10px; /* Reduced margin between nav items */
+}
+
+nav ul li a {
+    font-weight: 500;
+    padding: 8px 12px; /* Reduced padding */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px 20px; /* Adjusted top padding to accommodate the smaller header */
+}
+
+/* Description Section */
+.description {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px; /* Added margin-bottom to create space between header and description */
+    flex-direction: column; /* Align items in a column for smaller screens */
+    text-align: center;
+}
+
+.description img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.description h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto; /* Center text */
+}
+
+.boutonContent {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.bouton:hover {
+    background-color: #0056b3;
+}
+
+/* Section Titles */
+h2.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p.section-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Service, Project, and Competence Section */
+.APropos, .serviceContent, .mesProjets, .competencesContent {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.APropos, .serviceContent:hover, .mesProjets:hover, .competencesContent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+ .APropos, .serviceItem, .project-item, .competencesItem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.APropos, .serviceItem:hover, .project-item:hover, .competencesItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.serviceItem img, .project-item img {
+    width: 80px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.serviceItem h3, .project-item h3, .competencesItem h3 {
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.serviceItem p, .project-item p, .competencesItem p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Section Projects */
+.mesProjets {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.mesProjets h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between projects */
+}
+
+.project-item {
+    width: 100%;
+    max-width: 45%; /* Adjust project width */
+    text-align: center;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.project-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin: 20px 0 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+footer .social-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #007BFF;
+    background-color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+footer .social-buttons a:hover {
+    transform: scale(1.1);
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 880px) {
+    .description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description img {
+        margin-bottom: 20px;
+    }
+
+    .boutonContent {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-item h3, .competencesContent h3 {
+        font-size: 20px;
+    }
+
+    .serviceContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceItem, .competencesItem {
+        max-width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        max-width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px;
+    }
+}
