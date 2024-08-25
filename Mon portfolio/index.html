@@ -11,7 +11,14 @@
         <div class="logo">
             <img src="assets/Design%20sans%20titre.png" alt="logo" class="logo">
         </div>
-        <nav>
+        <!-- Burger Menu Button -->
+        <button class="burger-menu" aria-label="Open navigation menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        <!-- Navigation Menu -->
+        <nav class="nav-container">
             <ul>
                 <li><a href="#description">Description</a></li>
                 <li><a href="#titrePropos">À propos</a></li>
@@ -30,7 +37,7 @@
                     <img src="assets/Design%20sans%20titre.png" alt="logo" class="profile-image">
                 </div>
                 <div class="text-container">
-                    <h2>Dan Hamou</h2>
+                    <h1>Dan Hamou</h1>
                     <h3>Intégrateur web</h3>
                     <p>
                         Bonjour, je suis un intégrateur web passionné. Mon objectif est de transformer des concepts créatifs en expériences numériques fluides et engageantes. Avec une expertise en HTML, CSS, JavaScript et React, je m'efforce de construire des interfaces qui sont non seulement esthétiques mais aussi fonctionnelles et accessibles à tous. Chaque projet est une nouvelle opportunité d'apprendre, de créer et de contribuer à un web plus convivial et inclusif.
@@ -88,14 +95,16 @@
                         <p>
                             Alors voilà, l'idée, c'est de créer un site super pratique, surtout pour les utilisateurs mobiles, où on peut trouver tous les menus des restaurants gastronomiques. Les clients pourront composer leur propre menu avant même d'arriver au resto. Fini les attentes interminables, on optimise tout ça.
                         </p>
+                        <h4>Html Sass </h4>
                     </a>
                 </div>
                 <div class="project-item">
                     <a href="https://danou85.github.io/Projet-5/">
-                        <h3>Sprint It</h3>
+                        <h3>Print It</h3>
                         <p>
                             En tant que développeur front-end freelance, je me lance dans un projet excitant avec Print It, une petite imprimerie familiale. Après avoir mis en place la navigation dans le carrousel, il est temps d'ajouter les images pour dynamiser leur site Internet statique.
                         </p>
+                        <h4>JavaScript</h4>
                     </a>
                 </div>
                 <div class="project-item">
@@ -107,6 +116,7 @@
                             une photographe, grâce à un tuyau d'un de mes potes. 
                             Alors, j'ai décidé de la contacter pour lui proposer mes services. On a tous à y gagner, non ?
                         </p>
+                        <h4>SEO Wave lighthouse</h4>
                     </a>
                 </div>
                
@@ -144,5 +154,12 @@
         <img src="assets/Design%20sans%20titre.png" alt="logo" class="logo-footer">
     </footer>
     
+    <script>
+        // JavaScript pour afficher/masquer le menu
+        document.querySelector('.burger-menu').addEventListener('click', function () {
+            const navContainer = document.querySelector('nav'); // Modifier pour cibler le bon élément
+            navContainer.classList.toggle('show'); // Bascule de la classe 'show' pour afficher/masquer la nav
+        });
+    </script>
 </body>
 </html>
