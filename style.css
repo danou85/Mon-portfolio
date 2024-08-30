@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Styles globaux */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -20,10 +20,10 @@ h2, h3 {
 }
 
 h3:hover {
-    color: #007BFF; /* Color on hover */
+    color: #007BFF; /* Couleur au survol */
 }
 
-/* Header */
+/* En-tête */
 header {
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -31,21 +31,21 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 5px 20px; /* Reduced padding for a smaller header */
+    padding: 5px 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: white;
-    height: 60px; /* Adjusted height */
+    height: 60px;
 }
 
 header .logo img {
-    width: 50px; /* Reduced logo size */
+    width: 50px;
     height: auto;
 }
 
 nav {
-    padding-left: 20px; /* Added padding-left to shift menu items slightly to the right */
+    padding-left: 20px;
 }
 
 nav ul {
@@ -56,12 +56,12 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 10px; /* Reduced margin between nav items */
+    margin-left: 10px;
 }
 
 nav ul li a {
     font-weight: 500;
-    padding: 8px 12px; /* Reduced padding */
+    padding: 8px 12px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -71,12 +71,12 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Main Content */
+/* Contenu principal */
 main {
-    padding: 80px 20px 20px; /* Adjusted top padding to accommodate the smaller header */
+    padding: 80px 20px 20px;
 }
 
-/* Description Section */
+/* Section Description */
 .description {
     display: flex;
     align-items: center;
@@ -84,8 +84,8 @@ main {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px; /* Added margin-bottom to create space between header and description */
-    flex-direction: column; /* Align items in a column for smaller screens */
+    margin-bottom: 60px;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ main {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin-bottom: 20px; /* Space between image and text */
+    margin-bottom: 20px;
 }
 
 .description h2 {
@@ -112,7 +112,7 @@ main {
     font-size: 18px;
     line-height: 1.6;
     max-width: 600px;
-    margin: 0 auto; /* Center text */
+    margin: 0 auto;
 }
 
 .boutonContent {
@@ -137,7 +137,7 @@ main {
     background-color: #0056b3;
 }
 
-/* Section Titles */
+/* Titres de section */
 h2.section-title {
     font-size: 32px;
     margin-bottom: 20px;
@@ -150,7 +150,7 @@ p.section-description {
     color: #666;
 }
 
-/* Service, Project, and Competence Section */
+/* Section Services, Projets, et Compétences */
 .APropos, .serviceContent, .mesProjets, .competencesContent {
     background-color: #fff;
     padding: 30px;
@@ -161,12 +161,12 @@ p.section-description {
     text-align: center;
 }
 
-.APropos, .serviceContent:hover, .mesProjets:hover, .competencesContent:hover {
+.APropos:hover, .serviceContent:hover, .mesProjets:hover, .competencesContent:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
- .APropos, .serviceItem, .project-item, .competencesItem {
+.serviceItem, .project-item, .competencesItem {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -174,17 +174,18 @@ p.section-description {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.APropos, .serviceItem:hover, .project-item:hover, .competencesItem:hover {
+.serviceItem:hover, .project-item:hover, .competencesItem:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .serviceItem img, .project-item img {
-    width: 80px; /* Adjust image size */
+    width: 80px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
+
 .APropos h3, .serviceItem h3, .project-item h3, .competencesItem h3 {
     font-size: 24px;
     background-color: #333;
@@ -201,7 +202,7 @@ p.section-description {
     margin-top: 10px;
 }
 
-/* Section Projects */
+/* Section Projets */
 .mesProjets {
     padding: 20px;
     background-color: #f8f9fa;
@@ -217,12 +218,12 @@ p.section-description {
 .projects-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Space between projects */
+    gap: 20px;
 }
 
 .project-item {
     width: 100%;
-    max-width: 45%; /* Adjust project width */
+    max-width: 45%;
     text-align: center;
 }
 
@@ -247,14 +248,13 @@ p.section-description {
     margin: 20px 0 0;
 }
 
-
-h4{
+h4 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Footer */
+/* Pied de page */
 footer {
     background-color: #333;
     color: #fff;
@@ -284,9 +284,9 @@ footer .social-buttons a:hover {
     color: #fff;
 }
 
-/* Burger Menu Styling */
+/* Style du menu burger */
 .burger-menu {
-    display: none; /* Hidden by default */
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -306,93 +306,48 @@ footer .social-buttons a:hover {
     border-radius: 5px;
 }
 
-/* Show burger menu on smaller screens */
-@media screen and (max-width: 320px) {
-    .burger-menu {
-        display: flex; /* Show burger menu */
-    }
-
-    .nav-container {
-        display: none; /* Hide navigation by default */
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px; /* Position below the header */
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999; /* Ensure it is above other content */
-    }
-
-    .nav-container.show {
-        display: flex; /* Display nav when 'show' class is added */
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-        color: #fff; /* Ensure text is visible on dark background */
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-}
-/* Show burger menu on smaller screens */
-@media screen and (max-width: 880px) { /* Adjust breakpoint as needed */
-    .burger-menu {
-        display: flex; /* Show burger menu */
-    }
-
-    .nav-container {
-        display: none; /* Hide navigation by default */
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px; /* Position below the header */
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999; /* Ensure it is above other content */
-    }
-
-    .nav-container.show {
-        display: flex; /* Display nav when 'show' class is added */
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-        color: #fff; /* Ensure text is visible on dark background */
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-}
-
-/* Responsive Adjustments */
+/* Afficher le menu burger et ajustements responsifs */
 @media screen and (max-width: 880px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-container.show {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: #fff;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
     .description {
         flex-direction: column;
         align-items: center;
@@ -417,16 +372,17 @@ footer .social-buttons a:hover {
     }
 
     .serviceItem, .competencesItem {
-        max-width: 90%; /* Adjust width for smaller screens */
+        max-width: 90%;
         margin-bottom: 20px;
     }
+
     .projects-container {
         flex-direction: column;
         align-items: center;
     }
 
     .project-item {
-        max-width: 90%; /* Adjust width for smaller screens */
+        max-width: 90%;
         margin-bottom: 20px;
     }
 }
