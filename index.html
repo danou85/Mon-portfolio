@@ -1,196 +1,113 @@
 <!DOCTYPE html>
-<html lang="fr"> <!-- Déclaration du type de document et de la langue de la page (français) -->
+<html lang="fr">
 <head>
-    <meta charset="UTF-8"> <!-- Encodage de caractères UTF-8 pour supporter les caractères spéciaux -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rendre la page responsive en définissant la largeur initiale de la page au niveau de la largeur de l'appareil -->
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS externe pour le style -->
-    <title>Portfolio Hamou Dan</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dan Hamou</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Début du header de la page -->
+    <!-- En-tête avec logo et menu de navigation -->
     <header>
-        <div class="logo"> <!-- Conteneur pour le logo du site -->
-            <img src="assets/Design%20sans%20titre.png" alt="logo" class="logo"> <!-- Image du logo -->
+        <div class="header-container">
+            <img src="assets/Design%20sans%20titre.png" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <!-- Bouton pour le menu burger (menu de navigation pour les petits écrans) -->
-        <button class="burger-menu" aria-label="Open navigation menu"> 
-            <!-- Trois lignes représentant l'icône du menu burger -->
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </button>
-        
-        <!-- Début du menu de navigation -->
-        <nav class="nav-container">
-            <ul>
-                <!-- Liens vers différentes sections de la page -->
-                <li><a href="#description">Description</a></li>
-                <li><a href="#titrePropos">À propos</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#mesProjets">Mes Projets</a></li>
-                <li><a href="#competences">Mes Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <!-- Début du contenu principal de la page -->
-    <main>
-        <!-- Section de description -->
-        <div class="description" id="description">
-            <div class="description-contenu">
-                <div class="image-container"> <!-- Conteneur pour l'image de profil -->
-                    <img src="assets/Design%20sans%20titre.png" alt="logo" class="profile-image"> <!-- Image de profil -->
-                </div>
-                <div class="text-container"> <!-- Conteneur pour le texte de description -->
-                    <h1>Dan Hamou</h1> <!-- Nom de l'auteur du portfolio -->
-                    <h3>Intégrateur web</h3> <!--  profession -->
+
+    <!-- Section Accueil avec nom et présentation -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <img class="hero-image" src="assets/image portfolio.avif" alt="image">
+            <div class="text-content">
+                <h1>Dan Hamou</h1>
+                <h3>Intégrateur Web & Développeur Front-End</h3>
+                <p>Transformez vos idées en expériences numériques uniques. Spécialiste HTML, CSS, JavaScript, et React.</p>
+                <a href="#contact" class="cta-button">Me Contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Passionné par le web et les interfaces utilisateur, je suis intégrateur web et développeur front-end. Mon objectif est de créer des sites élégants et accessibles.</p>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services">
+        <h2>Mes Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Création de Sites Front-End</h3>
+                <p>Des sites esthétiques et réactifs avec HTML, CSS, et JavaScript.</p>
+            </div>
+            <div class="service">
+                <h3>Optimisation SEO</h3>
+                <p>Améliorez votre visibilité avec les meilleures pratiques SEO.</p>
+            </div>
+            <div class="service">
+                <h3>Maintenance de Sites Web</h3>
+                <p>Suivi et mise à jour régulière pour assurer la sécurité et la performance de votre site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="projects-container">
+            <div class="project">
+                <a href="https://danou85.github.io/Ohmyfood/" target="_blank">
+                    <h3>Oh My Food</h3>
                     <p>
-                        <!-- Brève introduction de l'auteur et de son expertise -->
-                        Bonjour, je suis un intégrateur web passionné. Mon objectif est de transformer des concepts créatifs en expériences numériques fluides et engageantes. Avec une expertise en HTML, CSS, JavaScript et React, je m'efforce de construire des interfaces qui sont non seulement esthétiques mais aussi fonctionnelles et accessibles à tous. Chaque projet est une nouvelle opportunité d'apprendre, de créer et de contribuer à un web plus convivial et inclusif.
+                        Site gastronomique mobile-first pour commander en ligne.
+                        Dans ce projet j'ai du coder un site de commande en ligne pour
+                        un restaurant , avec quelque animation faites avec SASS
                     </p>
-                    <div class="boutonContent"> <!-- Conteneur pour les boutons de contact -->
-                        <a href="mailto:danouhamou@gmail.com" class="bouton">Me Contacter</a> <!-- Lien mailto pour envoyer un email -->
-                        <a href="https://github.com/danou85" class="bouton" target="_blank">GitHub</a> <!-- Lien vers le profil GitHub ouvrant dans un nouvel onglet -->
-                    </div>
-                </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://danou85.github.io/Projet-5/" target="_blank">
+                    <h3>Print It</h3>
+                    <p>Site dynamique pour une imprimerie locale, avec carrousel d'images.
+                        Dans ce projet j'ai du coder un carrousel pour ce site d'imprimerie avec du Javascript. 
+                    </p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://danou85.github.io/Ninacarducci-p9/" target="_blank">
+                    <h3>Nina Carducci</h3>
+                    <p>Optimisation SEO pour un site de photographie.
+                        Dans ce projet j'ai du optimiser un site de photo pour améliorer son SEO
+                        j'ai du utiliser Wawe ainsi que lighthouse pour améliorer le SEO.
+                    </p>
+                </a>
             </div>
         </div>
-        
-        <!-- Section À propos -->
-        <div class="APropos" id="titrePropos">
-            <h3>A propos</h3>
-            <div class="proposContent"> <!-- Contenu de la section À propos -->
-                <p>
-                    <!-- Texte décrivant l'intérêt de l'auteur pour le développement web  -->
-                    Au cours de ma formation, j'explore différentes facettes du développement web pour développer une solide compréhension des technologies front-end. Mon intérêt particulier pour l'UI/UX et 
-                    l'accessibilité me motive à trouver des solutions innovantes pour rendre le web plus convivial et inclusif.
-                </p>   
-            </div>
-        </div>
+    </section>
 
-        <!-- Section Services -->
-        <div class="service" id="service">
-            <h2>Mes services</h2>
-            <div class="serviceContent"> <!-- Contenu des services offerts -->
-                <!-- Service 1 -->
-                <div class="serviceItem">
-                    <h3>Création de Sites Front-End</h3>
-                    <img src="assets/creation-removebg-preview.png" alt="creationImg" class="serviceImg"> <!-- Image illustrative du service -->
-                    <p>Conception et développement de sites web attrayants et fonctionnels.</p>
-                    <p>Utilisation de technologies telles que React, HTML, CSS, et JavaScript pour créer des interfaces utilisateur modernes.</p>
-                </div>
-        
-                <!-- Service 2 -->
-                <div class="serviceItem">
-                    <h3>Optimisation SEO</h3>
-                    <img src="assets/seo-removebg-preview.png" alt="seoImg" class="serviceImg"> <!-- Image illustrative du service -->
-                    <p>Analyse approfondie des mots-clés et de la concurrence pour améliorer la visibilité sur les moteurs de recherche.</p>
-                    <p>Mise en œuvre de bonnes pratiques SEO telles que l'utilisation de balises HTML sémantiques, des URLs lisibles, et l'optimisation des balises meta.</p>
-                </div>
-        
-                <!-- Service 3 -->
-                <div class="serviceItem">
-                    <h3>Maintenance de Sites Web</h3>
-                    <img src="assets/maintenance-removebg-preview.png" alt="maintenanceImg" class="serviceImg"> <!-- Image illustrative du service -->
-                    <p>Gestion régulière des mises à jour de contenu, des plugins et des thèmes pour assurer le bon fonctionnement du site.</p>
-                    <p>Sauvegarde régulière des données pour prévenir toute perte accidentelle et résolution rapide des problèmes liés à la sécurité.</p>
-                </div>
-            </div>
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>N'hésitez pas à me contacter pour vos projets web !</p>
+        <a href="mailto:danouhamou@gmail.com" class="cta-button-footer">Envoyer un Email</a>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/dan-hamou-455201201/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/danou85" target="_blank">GitHub</a>
         </div>
-        
-        <!-- Section Mes Projets -->
-        <div class="mesProjets" id="mesProjets">
-            <h2>Mes Projets</h2>
-            <div class="projects-container"> <!-- Conteneur pour les projets -->
-                <!-- Projet 1 -->
-                <div class="project-item">
-                    <a href="https://danou85.github.io/Ohmyfood/"> <!-- Lien vers le projet Oh My Food -->
-                        <h3>Oh My Food</h3>
-                        <p>
-                            <!-- Description du projet Oh My Food -->
-                            Alors voilà, l'idée, c'est de créer un site super pratique, surtout pour les utilisateurs mobiles, où on peut trouver tous les menus des restaurants gastronomiques. Les clients pourront composer leur propre menu avant même d'arriver au resto. Fini les attentes interminables, on optimise tout ça.
-                        </p>
-                        <h4>Html Sass </h4> <!-- Technologies utilisées pour le projet -->
-                    </a>
-                </div>
-                
-                <!-- Projet 2 -->
-                <div class="project-item">
-                    <a href="https://danou85.github.io/Projet-5/"> <!-- Lien vers le projet Print It -->
-                        <h3>Print It</h3>
-                        <p>
-                            <!-- Description du projet Print It -->
-                            En tant que développeur front-end freelance, je me lance dans un projet excitant avec Print It, une petite imprimerie familiale. Après avoir mis en place la navigation dans le carrousel, il est temps d'ajouter les images pour dynamiser leur site Internet statique.
-                        </p>
-                        <h4>JavaScript</h4> <!-- Technologies utilisées pour le projet -->
-                    </a>
-                </div>
+    </section>
 
-                <!-- Projet 3 -->
-                <div class="project-item">
-                    <a href="https://danou85.github.io/Ninacarducci-p9/"> <!-- Lien vers le projet Nina Carducci -->
-                        <h3>Nina Carducci</h3>
-                        <p>
-                            <!-- Description du projet Nina Carducci -->
-                            Alors, en tant que développeur freelance, j'ai décidé d'élargir un peu mes horizons en proposant mes compétences en optimisation SEO à de nouveaux clients. 
-                            J'ai pris le temps d'analyser plusieurs sites internet, histoire de repérer ceux qui pourraient vraiment bénéficier d'une petite amélioration côté référencement. Et devine quoi ? J'ai mis la main sur le site de Nina Carducci, 
-                            une photographe, grâce à un tuyau d'un de mes potes. 
-                            Alors, j'ai décidé de la contacter pour lui proposer mes services. On a tous à y gagner, non ?
-                        </p>
-                        <h4>SEO Wave lighthouse</h4> <!-- Technologies utilisées pour le projet -->
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Section Compétences -->
-        <div class="competences" id="competences">
-            <h2>Mes Compétences</h2>
-            <div class="competencesContent"> <!-- Contenu des compétences -->
-                <!-- Compétence 1 -->
-                <div class="competencesItem">
-                    <h3>Maîtrise du HTML/CSS</h3>
-                    <p>Expertise solide dans la création et la structuration de pages web en utilisant les langages HTML et CSS, assurant une présentation visuelle attrayante et une navigation fluide.</p>
-                </div>
-                
-                <!-- Compétence 2 -->
-                <div class="competencesItem">
-                    <h3>Conception adaptative (Responsive Design)</h3>
-                    <p>Capacité à concevoir des sites web réactifs qui offrent une expérience utilisateur optimale sur divers appareils, garantissant une accessibilité maximale.</p>
-                </div>
-                
-                <!-- Compétence 3 -->
-                <div class="competencesItem">
-                    <h3>JavaScript Interactif</h3>
-                    <p>Utilisation compétente de JavaScript pour ajouter des fonctionnalités interactives et dynamiques, permettant une interactivité accrue et une expérience utilisateur améliorée.</p>
-                </div>
-                
-                <!-- Compétence 4 -->
-                <div class="competencesItem">
-                    <h3>Gestion de la Compatibilité des Navigateurs</h3>
-                    <p>Expertise dans la résolution de problèmes de compatibilité entre navigateurs, assurant une consistance et une fonctionnalité optimale quel que soit le navigateur utilisé.</p>
-                </div>
-            </div>
-        </div>
-        
-    </main>
-
-    <!-- Début du pied de page (footer) -->
-    <footer id="contact">
-        <div class="social-buttons"> <!-- Bouton de réseau social (LinkedIn) -->
-            <a href="https://www.linkedin.com/in/dan-hamou-455201201?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxSp9LPCNQwCwwETtLirnZw%3D%3D" class="linkedin-button">LinkedIn</a>
-        </div>
-        <img src="assets/Design%20sans%20titre.png" alt="logo" class="logo-footer"> <!-- Logo dans le footer -->
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 Dan Hamou. Tous droits réservés.</p>
     </footer>
-    
-    <!-- JavaScript pour le menu burger -->
-    <script>
-        document.querySelector('.burger-menu').addEventListener('click', function () {
-            const navContainer = document.querySelector('nav'); // Sélectionne l'élément nav pour afficher/masquer le menu
-            navContainer.classList.toggle('show'); // Bascule la classe 'show' pour afficher/masquer la nav
-        });
-    </script>
 </body>
 </html>

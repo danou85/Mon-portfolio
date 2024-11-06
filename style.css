@@ -1,388 +1,318 @@
-/* Styles globaux */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
+/* Styles généraux */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h2, h3 {
-    margin: 0;
-    text-align: center;
-    color: #333;
-}
-
-h3:hover {
-    color: #007BFF; /* Couleur au survol */
-}
-
-/* En-tête */
-header {
-    background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Header */
+.header-container {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-    padding: 5px 20px;
+    background-color: #1c1c1c;
+    padding: 20px 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    color: white;
-    height: 60px;
+    z-index: 1000;
+    transition: background-color 0.3s;
 }
 
-header .logo img {
-    width: 50px;
-    height: auto;
+.header-container.scrolled {
+    background-color: rgba(28, 28, 28, 0.9); /* Effet de transparence pour le scroll */
 }
 
-nav {
-    padding-left: 20px;
+header .logo {
+    width: 80px;
+    transition: transform 0.3s ease;
 }
 
-nav ul {
+header .logo:hover {
+    transform: scale(1.1); /* Agrandit le logo au survol */
+}
+
+.nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 30px;
 }
 
-nav ul li {
-    margin-left: 10px;
-}
-
-nav ul li a {
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #007BFF;
-    color: #fff;
-}
-
-/* Contenu principal */
-main {
-    padding: 80px 20px 20px;
-}
-
-/* Section Description */
-.description {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px;
-    flex-direction: column;
-    text-align: center;
-}
-
-.description img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.description h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.description h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.description p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.boutonContent {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.bouton {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #333;
+.nav-links a {
     color: #fff;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.bouton:hover {
-    background-color: #0056b3;
+.nav-links a:hover {
+    color: #0a84ff;
+    transform: translateY(-3px); /* Effet de soulèvement au survol */
 }
 
-/* Titres de section */
-h2.section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-p.section-description {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: #666;
-}
-
-/* Section Services, Projets, et Compétences */
-.APropos, .serviceContent, .mesProjets, .competencesContent {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.APropos:hover, .serviceContent:hover, .mesProjets:hover, .competencesContent:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.serviceItem, .project-item, .competencesItem {
-    background-color: #fff;
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #121212;
+    position: relative;
+    overflow: hidden;
 }
 
-.serviceItem:hover, .project-item:hover, .competencesItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    animation: fadeIn 1.2s ease-out forwards;
 }
 
-.serviceItem img, .project-item img {
-    width: 80px;
-    height: auto;
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-image {
+    width: 400px;
     border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Zoom subtil au survol */
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-content h3 {
+    color: #0a84ff;
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
-.APropos h3, .serviceItem h3, .project-item h3, .competencesItem h3 {
-    font-size: 24px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin: 0;
-    border-radius: 5px;
-}
-
-.serviceItem p, .project-item p, .competencesItem p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-    margin-top: 10px;
-}
-
-/* Section Projets */
-.mesProjets {
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-
-.mesProjets h2 {
-    font-size: 32px;
-    color: #333;
+.text-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 500px;
     margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: #0a84ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #006bb3;
+    transform: scale(1.1);
+}
+
+/* About, Services, Projects Sections */
+section {
+    padding: 80px 20px;
     text-align: center;
 }
 
+section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#about section p {
+    color: #ccc;
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* Services */
+.services-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #0a84ff;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.service p {
+    color: #bbb;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service:hover h3 {
+    color: #1da1f2;
+}
+
+.service::before {
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: #0a84ff;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+/* Projects */
 .projects-container {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
-}
-
-.project-item {
-    width: 100%;
-    max-width: 45%;
-    text-align: center;
-}
-
-.project-item a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.project-item h3 {
-    font-size: 24px;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    margin: 0;
-    border-radius: 5px;
-}
-
-.project-item p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-    margin: 20px 0 0;
-}
-
-h4 {
-    display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* Pied de page */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.logo-footer {
-    width: 50px;
-}
-
-footer .social-buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #007BFF;
-    background-color: #333;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-footer .social-buttons a:hover {
-    transform: scale(1.1);
-    background-color: #007BFF;
-    color: #fff;
-}
-
-/* Style du menu burger */
-.burger-menu {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
+.project {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
+    gap: 15px;
 }
 
-.burger-menu .burger-line {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
+.project a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.project h3 {
+    font-size: 1.6rem;
+    color: #0a84ff;
+    transition: color 0.3s;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project:hover h3 {
+    color: #1da1f2;
+}
+
+.project::before {
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: #0a84ff;
     display: block;
-    border-radius: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
 }
 
-/* Afficher le menu burger et ajustements responsifs */
-@media screen and (max-width: 880px) {
-    .burger-menu {
-        display: flex;
-    }
+/* Contact */
+#contact .cta-button-footer {
+    padding: 12px 24px;
+    background-color: #0a84ff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-    .nav-container {
-        display: none;
+#contact .cta-button-footer:hover {
+    background-color: #006bb3;
+    transform: scale(1.1);
+}
+
+#contact .social-media {
+    margin-top: 20px;
+}
+
+#contact .social-media a {
+    color: #0a84ff;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .social-media a:hover {
+    color: #006bb3;
+    transform: translateY(-3px);
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
         flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-
-    .nav-container.show {
-        display: flex;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-        color: #fff;
-        padding: 10px 0;
-        width: 100%;
         text-align: center;
-        display: block;
     }
 
-    .description {
+    .hero-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .services-container, .projects-container {
         flex-direction: column;
         align-items: center;
-    }
-
-    .description img {
-        margin-bottom: 20px;
-    }
-
-    .boutonContent {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .project-item h3, .competencesContent h3 {
-        font-size: 20px;
-    }
-
-    .serviceContent {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .serviceItem, .competencesItem {
-        max-width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-item {
-        max-width: 90%;
-        margin-bottom: 20px;
     }
 }
