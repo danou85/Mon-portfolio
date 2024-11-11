@@ -1,114 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Dan Hamou</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- En-tête avec logo et menu de navigation -->
     <header>
-        <div class="header-container">
-            <img src="assets/Design%20sans%20titre.png" alt="Logo" class="logo">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="header-container">
+        <img src="assets/Design%20sans%20titre.png" alt="Logo" class="logo" />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Section Accueil avec nom et présentation -->
     <section class="hero-section">
-        <div class="hero-content">
-            <img class="hero-image" src="assets/image_portfolio-removebg-preview.png" alt="image">
-            <div class="text-content">
-                <h1>Dan Hamou</h1>
-                <h3>Intégrateur Web & Développeur Front-End</h3>
-                <p>Transformez vos idées en expériences numériques uniques. Spécialiste HTML, CSS, JavaScript, et React.</p>
-                <a href="#contact" class="cta-button">Me Contacter</a>
-            </div>
+      <div class="hero-content">
+        <img
+          class="hero-image"
+          src="assets/image_portfolio-removebg-preview.png"
+          alt="image"
+        />
+        <div class="text-content">
+          <h1>Dan Hamou</h1>
+          <h3>Intégrateur Web & Développeur Front-End</h3>
+          <p>
+            Transformez vos idées en expériences numériques uniques. Spécialiste
+            HTML, CSS, JavaScript, et React.
+          </p>
+          <a href="#contact" class="cta-button">Me Contacter</a>
         </div>
+      </div>
     </section>
 
-    <!-- Section À propos -->
+    <!-- Section À propos 
     <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Passionné par le web et les interfaces utilisateur, je suis intégrateur web et développeur front-end. Mon objectif est de créer des sites élégants et accessibles.
-           j'ai obtenu mon  diplome Developpeur intégrateur web  chez openclassroom. 
+      <div class="services-container">
+        <div class="service">
+          <h2>À propos de moi</h2>
+          <p>
+            Passionné par le web et les interfaces utilisateur, je suis
+            intégrateur web et développeur front-end. Mon objectif est de créer
+            des sites élégants et accessibles. j'ai obtenu mon diplome
+            Developpeur intégrateur web chez openclassroom.
+          </p>
+        </div>
+      </div>
     </section>
+    -->
+
+    <section id="about">
+        <div class="a-propos">
+            <h2>A propos de moi </h2>
+            <p>
+                Passionné par le web et les interfaces utilisateur, je suis
+                intégrateur web et développeur front-end. Mon objectif est de créer
+                des sites élégants et accessibles. j'ai obtenu mon diplome
+                Developpeur intégrateur web chez openclassroom.
+
+            </p>
+        </div>
+
+    </section>
+
+
 
     <!-- Section Services -->
     <section id="services">
-        <h2>Mes Services</h2>
-        <div class="services-container">
-            <div class="service">
-                <h3>Création de Sites Front-End</h3>
-                <p>Des sites esthétiques et réactifs avec HTML, CSS, et JavaScript.</p>
-            </div>
-            <div class="service">
-                <h3>Optimisation SEO</h3>
-                <p>Améliorez votre visibilité avec les meilleures pratiques SEO.</p>
-            </div>
-            <div class="service">
-                <h3>Maintenance de Sites Web</h3>
-                <p>Suivi et mise à jour régulière pour assurer la sécurité et la performance de votre site.</p>
-            </div>
+      <h2>Mes Services</h2>
+      <div class="services-container">
+        <div class="service">
+          <h3>Création de Sites Front-End</h3>
+          <p>
+            Des sites esthétiques et réactifs avec HTML, CSS, et JavaScript.
+          </p>
         </div>
+        <div class="service">
+          <h3>Optimisation SEO</h3>
+          <p>Améliorez votre visibilité avec les meilleures pratiques SEO.</p>
+        </div>
+        <div class="service">
+          <h3>Maintenance de Sites Web</h3>
+          <p>
+            Suivi et mise à jour régulière pour assurer la sécurité et la
+            performance de votre site.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Section Projets -->
     <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="projects-container">
-            <div class="project">
-                <a href="https://danou85.github.io/Ohmyfood/" target="_blank">
-                    <h3>Oh My Food</h3>
-                    <p>
-                        Site gastronomique mobile-first pour commander en ligne.
-                        Dans ce projet j'ai du coder un site de commande en ligne pour
-                        un restaurant , avec quelque animation faites avec SASS
-                    </p>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://danou85.github.io/Projet-5/" target="_blank">
-                    <h3>Print It</h3>
-                    <p>Site dynamique pour une imprimerie locale, avec carrousel d'images.
-                        Dans ce projet j'ai du coder un carrousel pour ce site d'imprimerie avec du Javascript. 
-                    </p>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://danou85.github.io/Ninacarducci-p9/" target="_blank">
-                    <h3>Nina Carducci</h3>
-                    <p>Optimisation SEO pour un site de photographie.
-                        Dans ce projet j'ai du optimiser un site de photo pour améliorer son SEO
-                        j'ai du utiliser Wawe ainsi que lighthouse pour améliorer le SEO.
-                    </p>
-                </a>
-            </div>
+      <h2>Mes Projets</h2>
+      <div class="projects-container">
+        <div class="project">
+          <a href="https://danou85.github.io/Ohmyfood/" target="_blank">
+            <h3>Oh My Food</h3>
+            <p>
+              Site gastronomique mobile-first pour commander en ligne. Dans ce
+              projet j'ai du coder un site de commande en ligne pour un
+              restaurant , avec quelque animation faites avec SASS
+            </p>
+          </a>
         </div>
+        <div class="project">
+          <a href="https://danou85.github.io/Projet-5/" target="_blank">
+            <h3>Print It</h3>
+            <p>
+              Site dynamique pour une imprimerie locale, avec carrousel
+              d'images. Dans ce projet j'ai du coder un carrousel pour ce site
+              d'imprimerie avec du Javascript.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="https://danou85.github.io/Ninacarducci-p9/" target="_blank">
+            <h3>Nina Carducci</h3>
+            <p>
+              Optimisation SEO pour un site de photographie. Dans ce projet j'ai
+              du optimiser un site de photo pour améliorer son SEO j'ai du
+              utiliser Wawe ainsi que lighthouse pour améliorer le SEO.
+            </p>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Section Contact -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>N'hésitez pas à me contacter pour vos projets web !</p>
-        <a href="mailto:danouhamou@gmail.com" class="cta-button-footer">Envoyer un Email</a>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/dan-hamou-455201201/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/danou85" target="_blank">GitHub</a>
-        </div>
+      <h2>Contact</h2>
+      <p>N'hésitez pas à me contacter pour vos projets web !</p>
+      <a href="mailto:danouhamou@gmail.com" class="cta-button-footer"
+        >Envoyer un Email</a
+      >
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/dan-hamou-455201201/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/danou85" target="_blank">GitHub</a>
+      </div>
     </section>
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2023 Dan Hamou. Tous droits réservés.</p>
+      <p>&copy; 2023 Dan Hamou. Tous droits réservés.</p>
     </footer>
-</body>
+  </body>
 </html>
