@@ -1,233 +1,413 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Dan Hamou</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#hero">Accueil</a></li>
-      <li><a href="#description">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#extras">Prestations</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#temoignages">Témoignages</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <header id="hero" class="hero fade-in">
-  <h1>Hello, je suis Dan Hamou</h1>
-  <p>Développeur passionné, créatif et rigoureux, je conçois des sites modernes et efficaces.</p>
-  <p>Mon portfolio présente des projets personnels réalisés avec soin, pour démontrer mes compétences techniques et mon sens du détail.</p>
-  <p>Je suis actuellement à la recherche de collaborations pour lancer mon activité en freelance. Chaque projet est pour moi une opportunité d’apprendre, d’évoluer et de créer quelque chose d’utile et de beau.</p>
-  <a href="#contact" class="cta-button">Discutons de votre projet</a>
-</header>
+    <title>Portfolio Dan Hamou</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <a href="https://wa.me/33767223905" class="whatsapp-float" target="_blank" title="Discutons sur WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="28" height="28">
+  </a>
+  
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#description">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#extras">Prestations</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section id="description" class="fade-in">
-  <h2>Ce que je fais</h2>
-  <p>Je suis développeur web autodidacte passionné, spécialisé dans la création de sites web modernes, esthétiques et performants. Je me forme en continu à travers des projets personnels pour explorer différentes approches du design, de l'accessibilité et du développement front-end.</p>
-  <p>Mon objectif : proposer à terme des solutions simples, efficaces et visuellement impactantes aux indépendants, TPE, ou porteurs de projets. Je développe actuellement mes compétences à travers des projets comme <strong>Ohmyfood</strong> et <strong>Nina Carducci</strong>, que vous pouvez consulter plus bas.</p>
-</section>
+    <header id="hero" class="hero fade-in">
+      <h1>Hello, je suis Dan Hamou</h1>
+      <p>
+        Développeur passionné, créatif et rigoureux, je conçois des sites
+        modernes et efficaces.
+      </p>
+      <p>
+        Mon portfolio présente des projets personnels réalisés avec soin, pour
+        démontrer mes compétences techniques et mon sens du détail.
+      </p>
+      <p>
+        Je suis actuellement à la recherche de collaborations pour lancer mon
+        activité en freelance. Chaque projet est pour moi une opportunité
+        d’apprendre, d’évoluer et de créer quelque chose d’utile et de beau.
+      </p>
+      <a href="#contact" class="cta-button">Discutons de votre projet</a>
+    </header>
 
-  <section id="skills" class="skills fade-in">
-    <h2>Mes compétences</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>React</li>
-      <li>JavaScript</li>
-      <li>WordPress</li>
-    </ul>
-  </section>
+    <section id="description" class="fade-in">
+      <h2>Ce que je fais</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Développement de sites sur mesure</h3>
+          <p>
+            Je crée des sites web responsive, modernes et performants, adaptés à
+            chaque besoin spécifique, que ce soit pour un indépendant, une TPE
+            ou un projet personnel.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Design centré utilisateur</h3>
+          <p>
+            J’accorde une grande importance à l’ergonomie, à l’esthétique et à
+            l’expérience utilisateur pour garantir un site agréable, intuitif et
+            professionnel.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Optimisation & accessibilité</h3>
+          <p>
+            Mes sites sont conçus pour être rapides, accessibles à tous et
+            optimisés pour le référencement naturel de base (SEO).
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section id="services" class="fade-in">
-    <h2>Mes services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Site One Page</h3>
-        <p>Idéal pour une présentation simple et rapide. Design responsive, chargement rapide et navigation fluide.</p>
-      </div>
-      <div class="card">
-        <h3>Site Multi Pages</h3>
-        <p>Parfait pour présenter plusieurs services ou contenus. Navigation structurée et optimisation SEO.</p>
-      </div>
-    </div>
-  </section>
+    <section id="skills" class="skills fade-in">
+      <h2>Mes compétences</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>WordPress</li>
+      </ul>
+    </section>
 
-  <section id="extras" class="fade-in">
-    <h2>Prestations complémentaires</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Création de site</h3>
-        <p>Je conçois des sites modernes et efficaces, adaptés à votre activité et à vos besoins.</p>
+    <section id="services" class="fade-in">
+      <h2>Mes services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Site One Page</h3>
+          <p>
+            Idéal pour une présentation simple et rapide. Design responsive,
+            chargement rapide et navigation fluide.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Site Multi Pages</h3>
+          <p>
+            Parfait pour présenter plusieurs services ou contenus. Navigation
+            structurée et optimisation SEO.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Référencement basique</h3>
-        <p>Optimisation du contenu pour une meilleure visibilité sur les moteurs de recherche.</p>
-      </div>
-      <div class="card">
-        <h3>Maintenance & Refonte</h3>
-        <p>Suivi technique, mises à jour et refonte de sites existants pour rester à jour et performant.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" class="fade-in">
-    <h2>Projets réalisés</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Ohmyfood</h3>
-        <p>Site responsive et animé de présentation de restaurants.</p>
-        <a href="https://danou85.github.io/Ohmyfood/" target="_blank">Voir le projet</a>
+    <section id="extras" class="fade-in">
+      <h2>Prestations complémentaires</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Création de site</h3>
+          <p>
+            Je conçois des sites modernes et efficaces, adaptés à votre activité
+            et à vos besoins.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Référencement basique</h3>
+          <p>
+            Optimisation du contenu pour une meilleure visibilité sur les
+            moteurs de recherche.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Maintenance & Refonte</h3>
+          <p>
+            Suivi technique, mises à jour et refonte de sites existants pour
+            rester à jour et performant.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Nina Carducci</h3>
-        <p>Site de photographe avec galerie d’images, SEO et accessibilité.</p>
-        <a href="https://danou85.github.io/Ninacarducci-p9/" target="_blank">Voir le projet</a>
-      </div>
-      <div class="card">
-        <h3>Projet à venir</h3>
-        <p>Bientôt un nouveau projet sera disponible ici.</p>
-        <a href="#">En construction</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="objectifs" class="fade-in">
-    <h2>Mes objectifs pour 2025</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Lancer mon activité freelance</h3>
-        <p>Je souhaite commencer à proposer mes services à des clients réels et gagner mes premiers contrats en développement web.</p>
+    <section id="projects" class="fade-in">
+      <h2>Projets réalisés</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Ohmyfood</h3>
+          <p>Site responsive et animé de présentation de restaurants.</p>
+          <a href="https://danou85.github.io/Ohmyfood/" target="_blank"
+            >Voir le projet</a
+          >
+        </div>
+        <div class="card">
+          <h3>Nina Carducci</h3>
+          <p>
+            Site de photographe avec galerie d’images, SEO et accessibilité.
+          </p>
+          <a href="https://danou85.github.io/Ninacarducci-p9/" target="_blank"
+            >Voir le projet</a
+          >
+        </div>
+        <div class="card">
+          <h3>Projet à venir</h3>
+          <p>Bientôt un nouveau projet sera disponible ici.</p>
+          <a href="#">En construction</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Renforcer mes compétences</h3>
-        <p>Continuer à apprendre React, Node.js et améliorer mes bases en UI/UX pour proposer des solutions encore plus qualitatives.</p>
+    </section>
+
+    <section id="objectifs" class="fade-in">
+      <h2>Mes objectifs pour 2025</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Lancer mon activité freelance</h3>
+          <p>
+            Je souhaite commencer à proposer mes services à des clients réels et
+            gagner mes premiers contrats en développement web.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Renforcer mes compétences</h3>
+          <p>
+            Continuer à apprendre React, Node.js et améliorer mes bases en UI/UX
+            pour proposer des solutions encore plus qualitatives.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Créer un réseau professionnel</h3>
+          <p>
+            Rencontrer d'autres développeurs, designers et entrepreneurs pour
+            échanger, collaborer et évoluer dans un écosystème stimulant.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Créer un réseau professionnel</h3>
-        <p>Rencontrer d'autres développeurs, designers et entrepreneurs pour échanger, collaborer et évoluer dans un écosystème stimulant.</p>
+    </section>
+
+    <section id="choisir" class="fade-in">
+      <h2>Pourquoi me choisir ?</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Passionné & engagé</h3>
+          <p>
+            Je mets tout mon cœur dans chaque projet. Même débutant, je suis
+            perfectionniste et déterminé à fournir un rendu professionnel.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Disponible & à l’écoute</h3>
+          <p>
+            Je suis réactif, à l’écoute de vos besoins et force de proposition.
+            Mon objectif est de construire un site qui vous ressemble.
+          </p>
+        </div>
+        <div class="card">
+          <h3>En constante évolution</h3>
+          <p>
+            Je continue de me former chaque semaine pour suivre les tendances et
+            améliorer mon travail. Votre site bénéficiera toujours des
+            meilleures pratiques.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="choisir" class="fade-in">
-    <h2>Pourquoi me choisir ?</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Passionné & engagé</h3>
-        <p>Je mets tout mon cœur dans chaque projet. Même débutant, je suis perfectionniste et déterminé à fournir un rendu professionnel.</p>
+    <section id="experience" class="fade-in">
+      <h2>Mon parcours et expériences</h2>
+      <div class="services">
+        <div class="card">
+          <h3>PSM Consulting</h3>
+          <p>
+            Création de sites internet WordPress pour différents clients. J’ai
+            participé à la personnalisation de thèmes, l’intégration de contenus
+            et la mise en ligne de projets professionnels.
+          </p>
+        </div>
+        <div class="card">
+          <h3>R'Digital</h3>
+          <p>
+            Réalisation de sites vitrines avec WordPress. Cette expérience m’a
+            permis de renforcer ma maîtrise de l’outil et de travailler sur des
+            projets concrets en lien avec des besoins clients variés.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Disponible & à l’écoute</h3>
-        <p>Je suis réactif, à l’écoute de vos besoins et force de proposition. Mon objectif est de construire un site qui vous ressemble.</p>
+
+      <h2>Mes diplômes et formations</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Développeur Intégrateur Web – OpenClassrooms</h3>
+          <p>
+            Certification obtenue en 2024. Formation professionnalisante
+            encadrée par des mentors, avec réalisation de 7 projets concrets
+            validant les compétences en HTML, CSS, JavaScript, React, SEO et
+            accessibilité.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Développeur WordPress – OpenClassrooms</h3>
+          <p>
+            Une spécialisation pratique orientée CMS, permettant la conception
+            de sites professionnels avec WordPress, la personnalisation de
+            thèmes, l’utilisation d’extensions avancées, et les bases du SEO.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>En constante évolution</h3>
-        <p>Je continue de me former chaque semaine pour suivre les tendances et améliorer mon travail. Votre site bénéficiera toujours des meilleures pratiques.</p>
+    </section>
+
+    <section id="processus" class="fade-in">
+      <h2>Mon processus de travail</h2>
+      <div class="services">
+        <div class="card">
+          <h3>1. Écoute & compréhension</h3>
+          <p>
+            On discute ensemble de votre projet, de vos besoins, et de vos
+            objectifs. Je prends le temps de bien comprendre votre activité.
+          </p>
+        </div>
+        <div class="card">
+          <h3>2. Développement</h3>
+          <p>
+            Je développe votre site en respectant les standards web, en
+            garantissant une navigation fluide et une compatibilité responsive.
+          </p>
+        </div>
+        <div class="card">
+          <h3>3. Mise en ligne & suivi</h3>
+          <p>
+            Une fois validé, votre site est mis en ligne. Je reste disponible
+            pour toute mise à jour ou amélioration future.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section id="ensemble" class="fade-in">
+      <h2><i class="fas fa-handshake"></i> Travaillons ensemble</h2>
+      <p class="cta-text">
+        Vous avez une idée, un besoin, ou simplement envie de discuter de votre
+        projet ?<br />
+        Je suis prêt à transformer vos idées en un site web élégant et
+        performant.
+      </p>
+      <a href="#contact" class="cta-button">Commencez votre projet</a>
+    </section>
 
-  <section id="experience" class="fade-in">
-  <h2>Mon parcours et expériences</h2>
-  <div class="services">
-    <div class="card">
-      <h3>PSM Consulting</h3>
-      <p>Création de sites internet WordPress pour différents clients. J’ai participé à la personnalisation de thèmes, l’intégration de contenus et la mise en ligne de projets professionnels.</p>
-    </div>
-    <div class="card">
-      <h3>R'Digital</h3>
-      <p>Réalisation de sites vitrines avec WordPress. Cette expérience m’a permis de renforcer ma maîtrise de l’outil et de travailler sur des projets concrets en lien avec des besoins clients variés.</p>
-    </div>
-  </div>
-
-  <h2>Mes diplômes et formations</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Développeur Intégrateur Web – OpenClassrooms</h3>
-      <p>Certification obtenue en 2024. Formation professionnalisante encadrée par des mentors, avec réalisation de 7 projets concrets validant les compétences en HTML, CSS, JavaScript, React, SEO et accessibilité.</p>
-    </div>
-    <div class="card">
-      <h3>Développeur WordPress – OpenClassrooms</h3>
-      <p>Une spécialisation pratique orientée CMS, permettant la conception de sites professionnels avec WordPress, la personnalisation de thèmes, l’utilisation d’extensions avancées, et les bases du SEO.</p>
-    </div>
-  </div>
-</section>
-
-  <section id="temoignages" class="fade-in">
-  <h2>Ce qu'on dit de moi</h2>
-  <div class="services">
-    <div class="card">
-      <p>"Même si Dan débute en freelance, son portfolio montre déjà une belle maturité dans la conception et l'esthétique de ses projets."</p>
-      <strong>– Mentor en développement web</strong>
-    </div>
-    <div class="card">
-      <p>"J’ai suivi son évolution et je suis convaincu qu’il sera un excellent prestataire. Sérieux, impliqué, créatif."</p>
-      <strong>– Collègue développeur</strong>
-    </div>
-  </div>
-</section>
-
-  <section id="faq" class="fade-in">
-    <h2>Questions fréquentes</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Quel est le délai moyen pour un site ?</h3>
-        <p>Entre 1 à 3 semaines selon la complexité du projet et la réactivité des échanges.</p>
+    <section id="temoignages" class="fade-in">
+      <h2>Ce qu'on dit de moi</h2>
+      <div class="services">
+        <div class="card">
+          <p>
+            "Même si Dan débute en freelance, son portfolio montre déjà une
+            belle maturité dans la conception et l'esthétique de ses projets."
+          </p>
+          <strong>– Mentor en développement web</strong>
+        </div>
+        <div class="card">
+          <p>
+            "J’ai suivi son évolution et je suis convaincu qu’il sera un
+            excellent prestataire. Sérieux, impliqué, créatif."
+          </p>
+          <strong>– Collègue développeur</strong>
+        </div>
       </div>
-      <div class="card">
-        <h3>Puis-je modifier mon site moi-même ?</h3>
-        <p>Oui ! Je propose des solutions administrables via WordPress ou une formation rapide si besoin.</p>
+    </section>
+
+    <section id="faq" class="fade-in">
+      <h2>Questions fréquentes</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Quel est le délai moyen pour un site ?</h3>
+          <p>
+            Entre 1 à 3 semaines selon la complexité du projet et la réactivité
+            des échanges.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Puis-je modifier mon site moi-même ?</h3>
+          <p>
+            Oui ! Je propose des solutions administrables via WordPress ou une
+            formation rapide si besoin.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Faites-vous aussi l’hébergement ?</h3>
+          <p>
+            Je vous conseille et vous accompagne sur le choix de l’hébergeur, et
+            je m'occupe de la mise en ligne.
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Faites-vous aussi l’hébergement ?</h3>
-        <p>Je vous conseille et vous accompagne sur le choix de l’hébergeur, et je m'occupe de la mise en ligne.</p>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contactez-moi</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 Dan Hamou. Tous droits réservés.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/danhamou" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/danou85" target="_blank">GitHub</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section id="contact" class="fade-in">
-    <h2>Contactez-moi</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Votre nom" required />
-      <input type="email" name="email" placeholder="Votre email" required />
-      <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Message envoyé ! Merci de m'avoir contacté.");
+          this.reset();
+        });
 
-  <footer>
-    © 2025 Dan Hamou. Tous droits réservés.
-  </footer>
-
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      alert("Message envoyé ! Merci de m'avoir contacté.");
-      this.reset();
-    });
-
-    // Animation d'apparition au scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+      // Animation d'apparition au scroll
+      const faders = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
         }
-      });
-    }, {
-      threshold: 0.1
-    });
+      );
 
-    faders.forEach(el => observer.observe(el));
-  </script>
-</body>
+      faders.forEach((el) => observer.observe(el));
+    </script>
+  </body>
 </html>

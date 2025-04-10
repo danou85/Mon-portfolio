@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom right, #e9f3fb, #fdfdff);
   color: #1f2d3d;
   scroll-behavior: smooth;
@@ -100,7 +100,7 @@ h3 {
   color: #1f2d3d;
 }
 
-/* LISTS & GRIDS */
+/* GRIDS */
 .skills ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -157,9 +157,46 @@ h3 {
 
 .card p {
   color: #506d91;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-/* FORMULAIRE */
+/* DESCRIPTION SECTION */
+#description .services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#description .card {
+  flex: 1 1 300px;
+  background: linear-gradient(145deg, #ffffff, #f0f6fc);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#description .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#description .card h3 {
+  color: #0d3b66;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#description .card p {
+  color: #506d91;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* FORM */
 form {
   margin-top: 2rem;
 }
@@ -191,13 +228,85 @@ form button:hover {
 
 /* FOOTER */
 footer {
-  text-align: center;
-  color: #6c7a89;
-  font-size: 0.9rem;
-  padding-top: 3rem;
+  background: #f0f4fa;
+  padding: 3rem 1.5rem 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid #d1e3f0;
 }
 
-/* ANIMATION APPARITION */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-content p {
+  color: #607d8b;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #0d3b66;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2979ff;
+}
+
+/* ENSEMBLE SECTION */
+#ensemble {
+  text-align: center;
+  background: linear-gradient(to right, #e8f4fc, #f2f9ff);
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  margin-top: 4rem;
+}
+
+#ensemble h2 {
+  font-size: 2.2rem;
+  color: #0d3b66;
+  margin-bottom: 1rem;
+}
+
+#ensemble h2 i {
+  margin-right: 0.5rem;
+  color: #2979ff;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: #506d91;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+#ensemble .cta-button {
+  background-color: #2979ff;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#ensemble .cta-button:hover {
+  background-color: #0d3b66;
+}
+
+/* ANIMATIONS */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -209,7 +318,7 @@ footer {
   transform: translateY(0);
 }
 
-/* SPÉCIFIQUE AUX TÉMOIGNAGES & FAQ */
+/* TÉMOIGNAGES & FAQ */
 #temoignages .card {
   background-color: #f5faff;
   border-left: 4px solid #2979ff;
@@ -226,4 +335,28 @@ footer {
 #faq .card p {
   color: #506d91;
   font-size: 0.95rem;
+}
+
+/* BOUTON WHATSAPP FLOTTANT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
