@@ -210,17 +210,7 @@ section h2 {
     flex-direction: column;
     align-items: center;
 }
-.service-pro {
-    background-color: #1e1e1e;
-    padding: 30px;
-    border-radius: 15px;
-    width: 350px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .service h3 {
     font-size: 1.5rem;
     color: #0a84ff;
@@ -252,6 +242,63 @@ section h2 {
     margin-bottom: 20px;
     border-radius: 2px;
 }
+
+
+
+
+/* Services */
+#services-pro .services-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#services-pro .service-pro {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services-pro .service-pro h3 {
+    font-size: 1.5rem;
+    color: #0a84ff;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+#services-pro.service-pro p {
+    color: #bbb;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#services-pro .service-pro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+#services-pro .service-pro:hover h3 {
+    color: #1da1f2;
+}
+
+#services-pro .service-pro::before {
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: #0a84ff;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
 
 /* Projects */
 .projects-container {
